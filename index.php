@@ -48,7 +48,7 @@
                 <?php } session_unset()?>
         
         <div class="col-md-12">
-        <a class="btn btn-success circle" style="position:fixed; bottom:40px; right:40px; z-index:2" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="fas fa-plus-circle"></i></a>
+        <a class="btn btn-success circle" sx|tyle="position:fixed; bottom:40px; right:40px; z-index:2" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="fas fa-plus-circle"></i></a>
 
             <table class= "table ">
                 <thead>
@@ -96,7 +96,7 @@
                     <?php echo $row['venta'] ?>
                     </td>
                     <td>
-                    <a class="btn btn-primary" href="edit.php?id=<?php echo $row['id']  ?>"><i class="fas fa-pen-nib"></i></a>
+                    <a class="btn btn-primary edit_product" href="edit.php?id=<?php echo $row['id']  ?>"><i class="fas fa-pen-nib"></i></a>
                     <a  class="btn btn-danger   " href="delete-task.php?id=<?php echo $row['id']  ?>"><i class="far fa-trash-alt"></i></a>
                     </td>                       
                     </tr>
@@ -107,4 +107,5 @@
         </div>
     </div>
 </div>
+<script src="assets/editar.js"></script>
 <?php include('includes/footer.php') ?>
